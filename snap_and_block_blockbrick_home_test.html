@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home - SNAP and BLOCK</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="SNAP and BLOCK">
+<meta name="description" content="SNAP and BLOCK is an upcoming game!">
+<meta name="keywords" value="snapandblock.yooco.org, snapandblock, snap and block, free games, online games, free-to-play, create games">
+<meta property="og:title" content="SNAP and BLOCK">
+<meta property="og:description" content="SNAP and BLOCK is an upcoming game!">
+<meta property="og:site_name" content="SNAP and BLOCK">
+<meta name="og:url" content="http://www.snapandblock.yooco.org/" />
+<meta property="og:type" content="game">
+<meta property="og:image" content="https://media.discordapp.net/attachments/345988575143395328/545423441059119143/snap_and_block_icon.png">
+<meta name="csrf-token" content="27fd39c5b504b01b1b3500b28829ab5e886e2b5e8914cb39aa654060548a3412">
+<link rel="stylesheet" type="text/css" href="http://www.rubyrealms.com/assets/css/theme-dark.css" />
+<link rel="shortcut icon" type="image/png" href="https://media.discordapp.net/attachments/345988575143395328/545423441059119143/snap_and_block_icon.png">
+<link rel="stylesheet" type="text/css" href="http://www.rubyrealms.com/assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="http://www.rubyrealms.com/assets/css/new.css">
+<link rel="stylesheet" type="text/css" href="http://www.rubyrealms.com/assets/css/header.css">
+<link rel="stylesheet" type="text/css" href="http://www.rubyrealms.com/assets/css/simple.css">
+<link rel="stylesheet" type="text/css" href="http://www.rubyrealms.com/assets/css/foundation.css">
+<link rel="stylesheet" type="text/css" href="http://www.rubyrealms.com/assets/css/hamburger.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<script src="/assets/javascript/vendor/jquery.js"></script>
+<script src="/assets/javascript/vendor/foundation.min.js"></script>
+<script src="https://js.pusher.com/4.3/pusher.min.js"></script>
+<script>var userID = "0"</script>
+<script>
+  // Do NOT share this code with anyone, even if they claim to be an administrator.
+  var pCode = "0"
+</script>
+<script src="http://www.rubyrealms.com/assets/javascript/main/header.js"></script>
+<script src="http://www.rubyrealms.com/assets/javascript/main/auth/main.js"></script>
+<script async src="http://www.rubyrealms.com/pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124247067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124247067-1');
+</script>
+<script src="/assets/javascript/main/notifications.js"></script>
+</head>
+<body class="background-main">
+<div class="head background-header grid-x align-middle">
+<div class="shrink cell menu-logo hamburger hamburger--collapse hide-for-large" onclick="OpenMainMenu()">
+<span class="hamburger-box">
+<span class="hamburger-inner"></span>
+</span>
+</div>
+<div class="shrink cell menu-logo">
+<a href="http://www.snapandblock.yooco.org/">
+<img style="height: 100%;" src="https://media.discordapp.net/attachments/345988575143395328/545423441059119143/snap_and_block_icon.png">
+</a>
+</div>
+<div class="shrink cell menu-logo show-for-large">
+<a href="/games" class="background-button font-color button-nav"><i class="fas fa-gamepad margin-right-5px"></i>Games (coming soon)</a>
+<a href="https://snapandblock.yooco.org/catalog" class="background-button font-color button-nav"><i class="fas fa-store margin-right-5px"></i>Catalog</a>
+<a href="https://snapandblock.yooco.org/forum/index.html" class="background-button font-color button-nav"><i class="far fa-list-alt margin-right-5px"></i>Forum</a>
+<a href="/groups/" class="background-button font-color button-nav"><i class="fas fa-users margin-right-5px"></i>Groups (coming soon)</a>
+</div>
+<div class="auto cell no-margin" style="height: 40px; margin-left:10px; margin-right:10px">
+<input class="margin-none" type="text" placeholder="Search SNAP and BLOCK!" name="search" id="head-search" autocomplete="off" onkeyup="searchSite()">
+<div id="search-dropdown" class="search-dropdown color-background-5 box-shadow-black-strong color-white" style="visibility: hidden; width: 100%; border-radius:5px; margin-top: 5px;">
+</div>
+</div>
+<div class="shrink cell menu-logo">
+<div onclick="showNotifications()" class="notifications-toggle background-button font-color button-nav" style="position: relative;">
+<i class="far fa-bell notification"></i>
+<i class="fas fa-circle notify-circle" style="display: none; top: 5px; right: 5px;"></i>
+</div>
+</div>
+<div id="notifications-dropdown" class="notifications-dropdown box-shadow-black" style="visibility: hidden; position: fixed; right: 50px; top: 60px; width: 400px; border-radius: 5px;">
+<div id="dropdown-header notifications-header" class="grid-x dropdown-header color-background-1" style="align-items:center; border-radius: 5px 5px 0px 0px;">
+<div class="auto cell color-white" style="font-weight: bold;">Notifications</div>
+<div class="shrink cell notifications-settings">
+<a href="/account/settings#notificationsPanel" class="button-nav font-color" style="margin: 0; padding: 5px;"><i class="fas fa-cog"></i></a>
+</div>
+</div>
+<div id="dropdown-body" class="grid-x background-header font-color" style="border-radius: 0px 0px 5px 5px;">
+</div>
+</div>
+<div class="grid-x shrink cell show-for-medium margin-right-10px" style="align-items:center;">
+
+</div>
+</a>
+<a class="shrink cell" href="/upgrade/brikz">
+<div class="shrink cell currency-ruby" style="margin-left: 10px;">
+<span class="currency-img" style="height:27px;"><img style="width:30px;" src="https://media.discordapp.net/attachments/345988575143395328/579058953409789959/snap_and_block_currency_BRIKZ.png"></span>
+<span id="ruby-large" class="color-ruby"><b style="vertical-align:middle;">0</b></span>
+</div>
+</a>
+</div>
+<div id="UserAccountIcon" class="shrink cell menu-logo margin-right-5px">
+<div id="menu-toggle" class="shrink cell background-button font-color button-nav" onclick="toggleDropdown()"><i id="menu-icon" class="fas fa-cog"></i></div>
+</div>
+<div id="account-dropdown" class="account-dropdown color-background-5" style="border-radius: 5px;">
+<div id="dropdown-header" class="grid-x dropdown-header color-background-1" style="align-items:center; border-radius: 5px 5px 0px 0px;">
+<div class="auto cell font-color" style='font-weight: bold;'><a class="font-color" href="/user/Guest/">Guest</a></div>
+<div class="shrink cell currency-gold show-for-small-only" style="margin-left: 10px;">
+<span class="currency-img" style="height:25px;"><img style="width:30px; height: 20px;" 
+<span id="gold-large" class="color-primary-3"><b style="vertical-align:middle;">10</b></span>"></span>
+<span id="gold-small" class="color-primary-3"><b style="vertical-align:middle;">10</b></span>
+</div>
+<div class="shrink cell currency-ruby show-for-small-only" style="height:27px; margin-left: 10px;">
+<span class="currency-img" style="height:27px;"><img style="width:30px;" src="https://media.discordapp.net/attachments/345988575143395328/579058953409789959/snap_and_block_currency_BRIKZ.png"></span>
+<span id="ruby-small" class="color-ruby"><b style="vertical-align:middle;">0</b></span>
+</div>
+</div>
+<div id="dropdown-items" class="dropdown-items" style="border-radius: 0px 0px 5px 5px;">
+<ul>
+<li><a href="/upgrade"><i class="fa fa-arrow-up" aria-hidden="true"></i> UPGRADE</a></li>
+<li><a href="/account/settings"><i class="fas fa-user-cog"></i> Account Settings</a></li>
+<li>
+<a href="#">
+<div class="grid-x" style="align-items: center;">
+<div class="auto cell"><i class="fas fa-moon" aria-hidden="true"></i> Coming Soon</div>
+<div class="switch small shrink cell margin-none" id="switch">
+<input class="switch-input" id="darkSwitch" type="checkbox" checked name="darkSwitch">
+<label class="switch-paddle" id="darkSwitchLabel" for="darkSwitch">
+</label>
+</div>
+</div>
+</a>
+</li>
+<-- <li><a onClick="logout()"><i class="fa fa-sign-out-alt" aria-hidden="true"></i> Log In or Sign In!</a></li> -->
+</il>
+</div>
+</div>
+</div>
+<div id="MainMenuLarge" class="background-menu show-for-large">
+<a href="https://snapandblock.yooco.org/members.html?fref=1" class="background-button font-color sidebar-nav"><i class="fa fa-user margin-right-5px" aria-hidden="true"></i>Members</a>
+<a href="https://snapandblock.yooco.org/myaccount.html" class="background-button font-color sidebar-nav"><i class="fas fa-street-view margin-right-5px"></i>Profile</a>
+<a href="https://snapandblock.yooco.org/instant_messages.html" class="background-button font-color sidebar-nav">
+<i class="far fa-envelope margin-right-5px"></i>Messages
+</a>
+
+</div>
+<div id="MainMenuMedium" class="background-menu hide-for-large">
+<a href="/games" class="background-button font-color sidebar-nav"><i class="fas fa-gamepad margin-right-5px"></i>Games</a>
+<a href="https://snapandblock.yooco.org/catalog" class="background-button font-color sidebar-nav"><i class="fas fa-store margin-right-5px"></i>Catalog</a>
+<a href="https://snapandblock.yooco.org/forum/index.html" class="background-button font-color sidebar-nav"><i class="far fa-list-alt margin-right-5px"></i>Forum</a>
+
+<a href="/account/messages" class="background-button font-color sidebar-nav">
+<i class="far fa-envelope margin-right-5px"></i>Messages
+</a>
+<a href="/account/trades" class="background-button font-color sidebar-nav">
+<i class="fas fa-exchange-alt margin-right-5px"></i>Trades
+</a>
+<a href="/user/ShopBoy608/#friends" class="background-button font-color sidebar-nav">
+<i class="fas fa-user-friends margin-right-5px"></i>Friends
+</a>
+<a href="/create" class="background-button font-color sidebar-nav"><i class="fas fa-wrench margin-right-5px"></i>Create</a>
+<a href="/rewards" class="background-button font-color sidebar-nav"><i class="fas fa-gift margin-right-5px"></i>Rewards</a>
+<a href="/upgrade" class="background-button font-color sidebar-nav"><i class="fa fa-arrow-up margin-right-5px" aria-hidden="true"></i></i>Upgrade</a>
+</div>
+<div id="main-container">
+<div class="grid-x">
+<div class="wrap-push show-for-large shrink cell">
+</div>
+<div class="auto cell grid-container content-wrap">
+<div style="text-align: center;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4111495463465465" data-ad-slot="9105977523"></ins>
+<script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+</div>
+<span class="auto cell label alert box-shadow-black word-break" style="border-radius: 5px; font-size: 14px; padding: 10px 10px; white-space: normal;">Welcome to SNAP and BLOCK!</span>
+<div class="main-push" style="height: 5px;">
+</div>
+<div class="shop-nav">
+<ul class="tabs grid-x" data-tabs id="category-tabs">
+<li class="tabs-title is-active small-6 medium-12 large-auto cell"><a data-tabs-target="spin-wheel-content" aria-selected="true"><i class="far fa-newspaper margin-right-5px"></i>News</a></li>
+<li class="tabs-title small-6 medium-4 large-auto cell"><a href="/games"><i class="fas fa-gamepad margin-right-5px"></i>Games (coming soon)</a></li>
+<li class="tabs-title small-6 medium-4 large-auto cell"><a href="https://snapandblockblog.blogspot.com/"><i class="fas fa-road margin-right-5px"></i>Blog</a></li>
+
+</ul>
+</div>
+
+</a>
+</div>
+</div>
+<div class="large-9 medium-6 small-12 height-30vh text-align-center padding-10px">
+<div class="grid-x height-100perc background-main border-radius-5px font-large font-color padding-10px box-shadow-black clickable-box-home home-animations">
+<div class="large-8 medium-12 small-12 news-title margin-auto">
+Welcome to SNAP and BLOCK!
+</div>
+<div class="large-12 medium-11 small-12 news-text text-align-center">
+Building the world block by block!
+</div>
+</div>
+</div>
+<div class="large-9 medium-6 small-12 height-30vh text-align-center padding-10px">
+<div style="background-image: url(https://media.discordapp.net/attachments/345988575143395328/568497822404575242/snap_and_block_art.png)" class="height-100perc text-align-center background-main border-radius-5px font-large font-color padding-10px box-shadow-black home-animations clickable-box-home large-home-box">
+<div class="grid-x large-home-box-content">
+<div class="large-12 medium-12 small-12 news-title margin-auto">
+SNAP and BLOG
+</div>
+<div class="large-12 medium-12 small-12 news-text margin-auto">
+This blog talks about new updates, releases, and other SNAP and BLOCK stuff!
+</div>
+<div class="large-12 medium-12 small-12 text-align-center">
+<a href="https://snapandblockblog.blogspot.com/" class="button secondary margin-auto">
+Take me there!
+</a>
+</div>
+</div>
+</div>
+</div>
+
+</a>
+</div>
+</div>
+<div class="large-3 medium-6 small-12 text-align-center margin-auto padding-10px">
+<div class="height-100perc background-main border-radius-5px font-large font-color padding-10px box-shadow-black clickable-box-home home-animations question-box-home">
+<div class="grid-x large-home-box-content height-100perc">
+<div class="large-12 medium-12 small-12 margin-auto">
+
+</div>
+<div class="large-12 medium-12 small-12 text-align-center">
+<a href="http://www.snapandblock.yooco.org" class="button secondary margin-auto">
+Go to the original site
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="text-align: center;">
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4111495463465465" data-ad-slot="9105977523"></ins>
+<script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-wrap background-footer box-shadow-black" style="position: relative; margin-top: -50px">
+<div class="grid-x">
+<div class="wrap-push show-for-large shrink cell">
+</div>
+<div class="grid-container auto cell">
+<div class="grid-x">
+<div class="color-white medium-auto small-12 cell grid-x" style="align-items:center;">
+<div class="large-auto medium-6 small-6 text-align-center" style="margin-top:10px; margin-bottom: 10px">
+
+</div>
+<div class="large-auto medium-6 small-6 text-align-center" style="margin-top:10px; margin-bottom: 10px">
+<a class="footer-link" href="https://snapandblockblog.blogspot.com/" target="_blank">Blog</a>
+</div>
+<div class="large-auto medium-6 small-6 text-align-center" style="margin-top:10px; margin-bottom: 10px">
+<a class="footer-link" href="https://snapandblock.yooco.org/forum/index.html">Forum</a>
+</div>
+
+</div>
+</div>
+<div class="color-white medium-shrink small-12 cell" style="align-items: center;">
+<div class="large-shrink medium-6 small-12 rounded-social-buttons grid-x text-align-center">
+<div class=" color-white footer-link large-12 medium-12 small-12" style="display:inline-block; margin-right:10px">
+Discord:
+</div>
+<div class="large-12 medium-12 small-12" style="display: inline-block">
+<
+<a class="social-button discord" href="https://discord.gg/HcDcUr7" target="_blank"></a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</button>
+</div>
+</body>
+</html>
